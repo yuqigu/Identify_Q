@@ -143,7 +143,7 @@ max(abs(PR_marg_true - PR_marg_bar))
 
 
 %%%% function %%%%%
-[c2, g2, p2, PR_marg_bar2, max_diff2] = get_Q24(1.3, 0.7, 0.23, 0.19)
+[c2, g2, p2, PR_marg_bar2, max_diff2] = get_Q24_nonid(1.3, 0.7, 0.23, 0.19)
 
 
 figure
@@ -151,7 +151,7 @@ plot(PR_marg_true, 'o', 'Color', 'k', 'MarkerSize', 15)
 hold on
 plot(PR_marg_bar, 'x', 'Color', [0    0.4470    0.7410],  'MarkerSize', 15)
 hold on
-plot(PR_marg_bar, '+', 'Color', [0.8500    0.3250    0.0980],   'MarkerSize', 15)
+plot(PR_marg_bar2, '+', 'Color', [0.8500    0.3250    0.0980],   'MarkerSize', 15)
 xticks(1:16)
 xticklabels({'0000','1000','0100','0010','0001','1100','1010', '1001', '0110', '0101', '0011', '1110', '1101', '1011', '0111', '1111'})
 xtickangle(45)
@@ -162,7 +162,7 @@ ylabel('marignal probabilities')
 set(gca,'fontsize',12)
 lgd = legend('true model', 'alternative model 1', 'alternative model 2', 'Location', 'southwest');
 lgd.FontSize = 12;
-print('-r500', 'id_Q24_marg', '-dpng');
+print('-r200', 'id_Q24_marg', '-dpng');
 
 
 figure
