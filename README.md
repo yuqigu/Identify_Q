@@ -1,6 +1,6 @@
 # Identify_Q
 
-Matlab code for checking identifiability conditions and performing simulation studies for our paper _Sufficient and Necessary Conditions for the Identifiability of the Q-matrix_, Gu and Xu (2018+).
+Matlab code for checking identifiability conditions and performing simulation studies for our paper _Sufficient and Necessary Conditions for the Identifiability of the Q-matrix_, Yuqi Gu and Gongjun Xu (2018+).
 
 <pre>
 1. checking identifiability conditions: 
