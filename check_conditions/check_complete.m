@@ -1,5 +1,7 @@
 function [is_complete, ind_I_K] = check_complete(Q)
 
+% This function checks if the matrix Q is complete
+
 %%% Condition A: check if there is an item solely requiring attribute k
 %%% for each attribute k=1,2,...,K
 [J, K] = size(Q);

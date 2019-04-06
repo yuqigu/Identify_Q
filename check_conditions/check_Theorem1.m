@@ -1,7 +1,7 @@
 function [id, is_complete, is_3items, is_distinct] = check_Theorem1(Q, varargin)
 
 % This function checks if the necessary and sufficient identifiability 
-% conditions of Q under DINA model are satisfied
+% conditions of Q under DINA model are satisfied (Theorem 1)
 
 % Q = [eye(3); 1 1 0; 1 0 1; 0 1 1; 1 1 1];
 

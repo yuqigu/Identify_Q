@@ -1,6 +1,6 @@
 function [is_gen_com] = check_generic_complete(Q)
 
-% This function checks if the Q-matrix is generic complete
+% This function checks if the Q-matrix is generically complete (Theorem 5)
 % This funciton checks generic completeness using Hall's marriage theorem
 
 % Q = [eye(3); 1 1 0; 1 0 1; 0 1 1; 1 1 1];

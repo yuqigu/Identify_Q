@@ -1,7 +1,8 @@
 function [is_double_comp] = check_double_complete(Q)
 
-%%% check if there are two disjoint complete submat of Q
-%%% i.e., check if each attr. is required by >=2 single attr.-items
+%%% This function checks if Q contains two disjoint complete submatrices
+%%% i.e., check if each attr. is required by >=2 single attribute items
+
 [J, K] = size(Q);
 is_k_2single = zeros(1, K);
 % single_index = zeros(1, K);

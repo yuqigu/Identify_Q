@@ -1,7 +1,7 @@
 function [is_mono, delta] = check_monotone(Q, theta)
 
 % This function checks if (sparsely written) item parameter matrix theta
-% satisfies the monotone constraint specifed by the Q-matrix under GIDNA
+% satisfies the monotone constraint specifed by the Q-matrix under GDINA
 
 % First get delta matrix from theta matrix, then check if ALL hte nonzero
 % elements of delta are positive; if so, monotone constraint is satisfied
