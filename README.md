@@ -10,6 +10,7 @@ Matlab code for checking identifiability conditions and performing simulation st
        check_Theorem4.m  
        check_generic_complete.m
        
-2. Folder "simulations" for performing simulation studies:
-       code for simulation studies I-VII in the Supplementary Material.
+2. Folder "simulations" for performing simulation studies including:
+       simulations in Section 3.1 in the main text;
+       simulation studies I-VII in the Supplementary Material.
 </pre>
