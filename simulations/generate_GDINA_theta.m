@@ -1,4 +1,5 @@
 function [theta, delta] = generate_GDINA_theta(Q)
+% This function randomly generate GDINA model parameters given a Q-matrix
 
 [J, K] = size(Q);
 

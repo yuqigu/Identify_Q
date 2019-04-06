@@ -1,3 +1,7 @@
+% This file performs exhaustive search of Q-matrix in the set of 5*2
+% candidate Q-matrices under DINA model, corresponding to simulation studies 
+% I, II, III in the Supplementary Material
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DINA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Q_aa = load('Q_aa.mat');
 Q_arr = cell2mat(struct2cell(Q_aa));

@@ -1,19 +1,4 @@
-%%% new example to replace example 3 %%%
-% % true Q-matrix is incomplete, DINA model % %
-
-% % Toy example: K=3, J = 6
-% Q =      [1 0 0; 0 1 0; 1 1 1; 1 0 0; 1 1 0; 1 1 1];
-% 
-% Q_bar1 = [1 0 0; 0 1 0; 0 1 1; 1 0 0; 1 1 0; 1 1 1];
-% 
-% Q_bar2 = [1 0 0; 0 1 0; 0 0 1; 1 0 0; 1 1 0; 1 1 1];
-% 
-% [J, K] = size(Q);
-% A = binary(0:(2^K-1), K);
-% 
-% IR = get_ideal_resp(Q, A);
-% IR1 = get_ideal_resp(Q_bar1, A);
-% IR2 = get_ideal_resp(Q_bar2, A);
+% This file correponds to simulation study IV in the supplementary material
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

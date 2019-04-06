@@ -1,22 +1,16 @@
 function [p_mse, c_mse, g_mse] = get_Q24_single_MSE(N, p_true, c_true, g_true)
 
-% This function computes the MLE of DINA model under a given Q-matrix
+% This function computes the MLE of DINA model under the 4*2 Q-matrix, for
+% a given set of true parameters (p_true, c_true, g_true)
 % Revision: use EM with 10 random starts and select the highest MLE
 
 num_ran = 10;
 
-% Q = [1 0 0; 0 1 0; 0 0 1; 0 1 1; 1 0 1; 1 1 0];
 
 Q = [1 0; 0 1; 1 0; 0 1];
 
 [J, K] = size(Q);
 
-% A = binary(1:(2^K-1), K);
-% I_full = get_I(M, M);
-
-% [X, ~] = generate_X(N, p_true, Q, c_true, g_true);
-% [p_hat, c_hat, g_hat, loglik_hat] = get_cg(X, Q);
-% sum((p_hat - p_true).^2)
 
 %%% simulations start %%%
 Nset = size(p_true, 2); % number of true parameter sets

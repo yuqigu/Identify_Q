@@ -1,7 +1,7 @@
 function [c, g, p, PR_marg_bar, max_diff] = get_Q24_nonid(ratio1_bar, ratio2_bar, g1_bar, g2_bar)
 
-% This function calculates alternative sets of parameters under Q_{2*4} 
-% Q_{2*4} = [1 0; 0 1; 1 0; 0 1];
+% This function calculates alternative sets of parameters under Q_{4*2} 
+% corresponding to Figure 1 in Section 3.1
 % When p_{00}p_{11} = p_{01}p_{10}, the parameters are not identifiable
 
 

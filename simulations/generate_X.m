@@ -1,4 +1,7 @@
 function [X, A] = generate_X(N, p, Q, c, g)
+% This function generate data under the DINA model given Q-matrix and model
+% parameters p, c(=1-s), g for sample size N
+
 % @param N               : sample size
 % @param p               : 2^K x 1 vector of profile probabilities
 % @param Q               : M x K item-attribute relationship

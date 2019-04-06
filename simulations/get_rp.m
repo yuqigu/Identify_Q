@@ -1,6 +1,6 @@
 function [Rp] = get_rp(A, Q, c, g, I_full)
-% produce R-matrix for all rows denoted by I, storing proportions of 
-% positive response for each response pattern in I
+% This function stores the marginal probabilities of all the 2^J possible
+% response patterns
 
 [M, K] = size(Q);
 

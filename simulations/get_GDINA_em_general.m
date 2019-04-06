@@ -1,14 +1,16 @@
 function [theta_sub, delta_sub, nu, loglik] = get_GDINA_em_general(X, Q, A, ...
     expand_Q_sub, attr_patt_eff, theta_ini_sub, expand_S)
 
+% EM algorithm for estimating category proportions nu_c and
+% GDINA parameters theta, delta
+
 % @param X               : N x J response matrix
 % @param Q               : J x K Q-matrix
 % @param theta_ini       : initilization of GDINA paramters theta
 % @param nu_ini          : initilization of proportions
 
 
-% EM algorithm for estimating category proportions nu_c and
-% GDINA parameters theta, delta
+
 
 [J, K] = size(Q);
 

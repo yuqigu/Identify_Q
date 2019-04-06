@@ -1,4 +1,6 @@
-%%% new Example to replace Example 5 and very Theorem 3 %%%
+% This file corresponds to Simulation Study VII in the Supplementary
+% Material for the case K=5. This file generates Figure 9 in the supplement
+
 % K = 5, J = 20
 Q_18times4 = [eye(4); eye(4); eye(4); 1 1 0 0; 1 0 1 0;...
     1 0 0 1; 0 1 1 0; 0 1 0 1; 0 0 1 1];
@@ -126,7 +128,7 @@ find_rng = find_rng0(1:70);
 Theta_bar_mono = zeros(J, 2^K, length(find_rng));
 nu_bar_mono = zeros(2^K, 1, length(find_rng));
 
-load('nolid_gdina_attr2_K5_J20_70alter.mat')
+% load('nolid_gdina_attr2_K5_J20_70alter.mat')
 
 % plot the item parameters
 figure

@@ -1,4 +1,7 @@
-clear;
+% This file performs exhaustive search of Q-matrix in the set of 5*2
+% candidate Q-matrices under GDINA model, corresponding to simulation studies 
+% V and VI in the Supplementary Material
+
 load('exhaus_gdina_Q9.mat')
 
 val = ll(id0);

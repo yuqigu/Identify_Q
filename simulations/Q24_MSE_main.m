@@ -1,4 +1,5 @@
-%%%%%%%%%%%%%%%%% Q24: random generation and generic identifiability %%%%%%%%%%%%%%%%%%%
+% This file generates Figure 2 and Figure 3 in Section 3.1 of the main text
+%%%%% Q24: random generation and generic identifiability %%%%%
 Q = [1 0; 0 1; 1 0; 0 1];
 [J, K] = size(Q);
 

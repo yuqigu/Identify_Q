@@ -1,4 +1,5 @@
 function [nu_c, c_i, g_i, loglik] = get_cg(X, Q, p_ini, c_ini, g_ini)
+% This function uses EM algorithm to estimate model parameters under DINA
 
 % @param X               : n x m response matrix
 % @param Q               : m x k Q-matrix

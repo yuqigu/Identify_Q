@@ -1,6 +1,8 @@
-%%% new Example to replace Example 5 and very Theorem 3 %%%
+% This file corresponds to Simulation Study VII in the Supplementary
+% Material for the case K=3. This file generates Figure 8 in the supplement
+
 % K = 3, J = 20
-load('nolid_gdina_attr2_K3_J20_70alter.mat')
+% load('nolid_gdina_attr2_K3_J20_70alter.mat')
 
 Q_sub = [zeros(18, 1), repmat([1 0; 0 1; 1 1], [6, 1])];
 Q = [1 1 0; 1 0 1; Q_sub];
@@ -122,35 +124,6 @@ find_rng = find_rng0(1:70);
 Theta_bar_mono = zeros(J, 2^K, length(find_rng));
 nu_bar_mono = zeros(2^K, 1, length(find_rng));
 
-% % plot the item parameters
-% figure
-% for ind = 1:length(find_rng)
-%     [Theta_bar, theta_bar_combo, delta_bar_combo, nu_bar, is_monotone] = ...
-%         get_gdina_theta_bar_THM3_K3(Theta_true, nu_true, Q_bar, expand_Qbar, find_rng(ind));
-%     
-%     Theta_bar_mono(:,:,ind) = Theta_bar;
-%     nu_bar_mono(:,:,ind) = nu_bar;
-%     plot(1:16, [Theta_bar(1,:), Theta_bar(2,:)], ':+', 'LineWidth', 2, 'MarkerSize', 8)
-%     hold on
-% end
-% plot(1:16, [Theta_true(1,:), Theta_true(2,:)], '-ko', 'MarkerFaceColor', 'k', 'LineWidth', 2, 'MarkerSize', 8)
-% % title('Item Parameters')
-% axis([1 16 0.1 1])
-% pbaspect([4 3 1]);
-% xticks(1:16)
-% xticklabels({'\theta_{1,000}','\theta_{1,001}','\theta_{1,010}','\theta_{1,011}',...
-%     '\theta_{1,100}','\theta_{1,101}', '\theta_{1,110}', '\theta_{1,111}', '\theta_{2,000}', '\theta_{2,001}',...
-%     '\theta_{2,010}', '\theta_{2,011}', '\theta_{2,100}', '\theta_{2,101}', '\theta_{2,110}', '\theta_{2,111}'})
-% xtickangle(45)
-% set(gca,'FontSize',13)
-% xlabel('Parameter Indices')
-% ylabel('Parameter Values')
-% grid on
-% print('-r400', 'nolid_gdina_attr2_70alter_item', '-dpng');
-
-% modify to plotting only the differences between alternative params and
-% true parameters
-% plot the item parameters
 
 figure
 for ind = 1:length(find_rng)

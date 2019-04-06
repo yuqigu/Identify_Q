@@ -1,4 +1,7 @@
 function [p_true, c_true, g_true] = get_rand_true(Nset)
+% This function randomly generates a total number of Nset sets of model
+% parameters under DINA for the 4*2 Q-matrix, following the generating
+% mechanism described in simulation scenario (b) in Section 3.1
 
 Q = [1 0; 0 1; 1 0; 0 1];
 [J, K] = size(Q);

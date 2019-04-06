@@ -1,6 +1,10 @@
 function [Theta_bar, theta_bar_combo, delta_bar_combo, nu_bar, is_monotone] = ...
     get_gdina_theta_bar_THM3(Theta_true, nu_true, Q_bar, expand_Qbar, ind_rng)
 
+% This function constructs alternative model parameters based on Theorem 3
+% that are not distinguishable from the true model
+
+
 rng(ind_rng)
 
 [~, num_class] = size(Theta_true); 

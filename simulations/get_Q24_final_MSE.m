@@ -1,5 +1,8 @@
 function [] = get_Q24_final_MSE
 
+% This function obtains the MSE of model parameters under a 4*2 Q-matrix,
+% corresponding to Figure 2 in Section 3.1
+
 %%%%%%%%%%%%%%%%% Q24: random generation and generic identifiability %%%%%%%%%%%%%%%%%%%
 Q = [1 0; 0 1; 1 0; 0 1];
 [J, K] = size(Q);

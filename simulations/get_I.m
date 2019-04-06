@@ -1,6 +1,4 @@
 function[I] = get_I(D,M)
-% question: if we set D=2, do we get all the two-way interations of
-% reponses? Yes!
     
 index0 = 2.^((M-1):-1:0)'; % length M
 indices = index0;

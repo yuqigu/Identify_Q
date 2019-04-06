@@ -1,6 +1,9 @@
 function [Theta_bar, theta_bar_combo, delta_bar_combo, nu_bar, is_monotone] = ...
     get_gdina_theta_bar_THM3_K3(Theta_true, nu_true, Q_bar, expand_Qbar, ind_rng)
 
+% This function constructs alternative model parameters based on Theorem 3
+% that are not distinguishable from the true model for K=3
+
 rng(ind_rng)
 
 [~, num_class] = size(Theta_true); 
@@ -14,10 +17,7 @@ attr_combo = get_I(K, K); % (2^K-1) * K
 Theta_bar = Theta_true; nu_bar = zeros(1, num_class);
 
 
-% rng(1); rng(30); rng(100); rng(1300); rng(1400); rng(1700)
-% The following line is the original version
-% Theta_bar(1:2, 1:4) = Theta_true(1:2, 1:4) + (-0.1 + 0.2 * rand(2, 4));
-% The following is the new version for monotone constraint under Q_bar
+% The following is for monotone constraint under Q_bar
 Theta_bar(1:2, 1:4) = Theta_true(1:2, 1:4) + ...
     [-0.15+0.1*rand(2,1), -0.1+0.1*rand(2,1), -0.1+0.1*rand(2,1), -0.05+0.1*rand(2,1)];
 

@@ -1,5 +1,6 @@
 function [X, X_A] = generate_X_GDINA(N, nu_true, Q, delta_true)
-% generate data under the A-CDM
+% This function generate data under the GDINA model given Q-matrix and model
+% parameters nu_true and delta_true for sample size N
 
 
 [M, K] = size(Q);
