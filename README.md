@@ -9,4 +9,5 @@ Matlab code for
        check_generic_complete.m
        
 2. performing simulation studies.
+       code for simulation studies I-VII in the Supplementary Material.
 </pre>
