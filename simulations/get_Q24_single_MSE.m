@@ -23,10 +23,6 @@ g_mse = zeros(Nset, 1);
 
 rng('default');
 for rr = 1:Nset
-%     pn = gamrnd(ones(1,2^K), ones(1,2^K));
-%     p_true(:,rr) = pn / sum(pn);
-%     c_true(:,rr) = 0.9 - 0.3 * rand(J, 1);
-%     g_true(:,rr) = 0.1 + 0.3 * rand(J, 1);
     
     p_dist = zeros(Niter, 1);
     g_dist = p_dist; c_dist = p_dist;
@@ -41,10 +37,10 @@ for rr = 1:Nset
         g_vec = zeros(J, num_ran);
         
         for ii = 1:num_ran
-                pn0 = gamrnd(ones(1,2^K), ones(1,2^K));
+                pn0 = gamrnd(3*ones(1,2^K), ones(1,2^K));
                 p_ini = pn0 / sum(pn0);
-                c_ini = 0.9 - 0.3 * rand(J, 1);
-                g_ini = 0.1 + 0.3 * rand(J, 1);
+                c_ini = 0.9 - 0.2 * rand(J, 1);
+                g_ini = 0.1 + 0.2 * rand(J, 1);
     
                 [p_hat, c_hat, g_hat, loglike] = get_cg(X, Q,...
                     p_ini, c_ini, g_ini);
